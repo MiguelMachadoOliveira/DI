@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari</title>
+  <script>
+    (function () {
+      var tema;
+      try { tema = localStorage.getItem('tema'); } catch (e) {}
+      if (!tema) {
+        tema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+      }
+      document.documentElement.setAttribute('data-tema', tema);
+    })();
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-esquerda">
+      <img src="imagens/logo.png" alt="Logo Ferrari" class="logo">
+
+   <nav class="menu">
+  <a href="index.html">Início</a>
+  <a href="pilotos.html">Pilotos</a>
+  <a href="carros.html">Carros</a>
+  <a href="titulos.html">Títulos</a>
+</nav>
+    </div>
+
+  </header>
+<main>
+
+  <section class="hero">
+    <span class="hero-tag">1939 · Maranello, Itália</span>
+    <h1>Scuderia <span>Ferrari</span></h1>
+  </section>
+
+  <section class="historia">
+
+    <div class="fotos">
+      <figure>
+        <img src="imagens/enzo ferrari.png">
+        <figcaption>Enzo Ferrari, o fundador</figcaption>
+      </figure>
+
+      <figure>
+        <img src="imagens/images (1).jpg">
+        <figcaption>Scuderia Ferrari em 2025</figcaption>
+      </figure>
+    </div>
+
+    <div class="texto-card">
+      <p class="destaque">
+        A Ferrari é uma fabricante italiana de automóveis fundada em 1939 por Enzo Ferrari,
+        na cidade de Maranello, na Itália. Reconhecida mundialmente por seus carros esportivos
+        de luxo, seu símbolo do cavalo rampante e sua tradicional cor vermelha, a marca
+        construiu sua reputação por meio da velocidade, inovação tecnológica e paixão pelo
+        automobilismo. Ao longo de sua história, tornou-se um dos maiores símbolos da indústria
+        automobilística e do esporte a motor.
+      </p>
+
+      <p>
+        Na Fórmula 1, a Ferrari é a equipe mais antiga em atividade e uma das mais vitoriosas
+        da categoria, participando desde sua estreia no campeonato, em 1950. Conquistou seu
+        primeiro título de pilotos em 1952, com Alberto Ascari, e, ao longo das décadas,
+        construiu uma trajetória marcada por grandes conquistas, rivalidades e pilotos lendários,
+        como Niki Lauda, Michael Schumacher, Fernando Alonso e Kimi Räikkönen. Seu período de
+        maior domínio aconteceu entre 2000 e 2004, quando conquistou cinco títulos consecutivos
+        de pilotos com Michael Schumacher, além de diversos títulos de construtores. A equipe
+        também se tornou conhecida por sua tradicional cor vermelha, pelo apoio apaixonado de
+        seus torcedores, conhecidos como tifosi, e por sua rivalidade com equipes como McLaren
+        e Mercedes. Apesar de enfrentar períodos de dificuldades e longos jejuns de títulos, a
+        Ferrari continua sendo uma das maiores referências da Fórmula 1, representando tradição,
+        competitividade e paixão pelo automobilismo.
+      </p>
+    </div>
+
+  </section>
+
+  <section class="numeros">
+    <div class="numero"><strong>1939</strong><span>Fundação</span></div>
+    <div class="numero"><strong>1950</strong><span>Estreia na F1</span></div>
+    <div class="numero"><strong>31</strong><span>Títulos mundiais</span></div>
+  </section>
+</main>
+  <footer class="footer">
+    <p class="footer-copy">&copy; 2026 Miguel Oliveira. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>

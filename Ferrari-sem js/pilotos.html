@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilotos - Ferrari</title>
+    <script>
+    (function () {
+      var tema;
+      try { tema = localStorage.getItem('tema'); } catch (e) {}
+      if (!tema) {
+        tema = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+      }
+      document.documentElement.setAttribute('data-tema', tema);
+    })();
+  </script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+    <div class="navbar-esquerda">
+      <img src="imagens/logo.png" alt="Logo Ferrari" class="logo">
+
+   <nav class="menu">
+  <a href="index.html">Início</a>
+  <a href="pilotos.html">Pilotos</a>
+  <a href="carros.html">Carros</a>
+  <a href="titulos.html">Títulos</a>
+</nav>
+    </div>
+
+  </header>
+
+  <main class="pilotos">
+
+    <h1>Pilotos Atuais</h1>
+
+    <section class="lista-pilotos">
+
+      <article class="piloto-card">
+        <img src="imagens/leclerc.jpg">
+        <div class="piloto-info">
+          <h2>Charles Leclerc</h2>
+          <span class="piloto-sub">Mônaco · Ferrari desde 2019</span>
+
+          <h3>Na Fórmula 1</h3>
+          <p>
+            Campeão da GP3 em 2016 e da F2 em 2017, estreou na F1 em 2018 pela Sauber
+            e foi logo contratado pela Ferrari.
+          </p>
+
+          <h3>Na Ferrari</h3>
+          <p>
+            Chegou em 2019, aos 21 anos, e se tornou o rosto da equipe. É o segundo piloto
+            com mais poles na história da Ferrari, e só Michael Schumacher disputou mais
+            corridas pela equipe. 
+          </p>
+
+          <h3>Conquistas</h3>
+          <ul>
+            <li>9 vitórias e 27 pole positions</li>
+            <li>Vice-campeão mundial em 2022</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="piloto-card">
+        <img src="imagens/hamilton.jpg">
+        <div class="piloto-info">
+          <h2>Lewis Hamilton</h2>
+          <span class="piloto-sub">Reino Unido · Ferrari desde 2025</span>
+
+          <h3>Na Fórmula 1</h3>
+          <p>
+            Estreou em 2007 pela McLaren e foi campeão em 2008. Depois, na Mercedes, venceu
+            mais seis títulos. É o recordista de vitórias e de poles da história da F1.
+          </p>
+
+          <h3>Na Ferrari</h3>
+          <p>
+            Trocou a Mercedes pela Ferrari em 2025, realizando um sonho de infância. A primeira
+            temporada foi difícil, a única da carreira sem pódio em GP. Em 2026 conquistou seu primeiro pódio de GP pela Ferrari no GP da China
+           , sua primeira pole pela equipe no GP do México e sua primeira vitória pela equipe no GP de barcelona.
+          </p>
+
+          <h3>Conquistas</h3>
+          <ul>
+            <li>7 títulos mundiais (2008, 2014, 2015, 2017, 2018, 2019 e 2020)</li>
+            <li>106 vitórias na F1, recorde da categoria</li>
+            <li>105 Pole positions na F1, recorde da categoria</li>
+          </ul>
+        </div>
+      </article>
+
+    </section>
+
+    <h1>Pilotos Lendários</h1>
+
+    <section class="lista-pilotos">
+
+      <article class="piloto-card">
+        <img src="imagens/ascari.jpg">
+        <div class="piloto-info">
+          <h2>Alberto Ascari</h2>
+          <span class="piloto-sub">Itália · Ferrari de 1950 a 1953</span>
+
+          <h3>Na Fórmula 1</h3>
+          <p>
+            Um dos grandes nomes da primeira era da F1, correu no campeonato desde a
+            temporada de estreia, em 1950, e ficou famoso pelo estilo preciso e agressivo.
+          </p>
+
+          <h3>Na Ferrari</h3>
+          <p>
+            Foi ele quem deu à Ferrari seu primeiro título de pilotos, em 1952, e repetiu
+            o feito em 1953, dominando as duas temporadas.
+          </p>
+
+          <h3>Conquistas</h3>
+          <ul>
+            <li>Bicampeão mundial (1952 e 1953), os dois títulos pela Ferrari</li>
+            <li>13 vitórias na F1</li>
+            <li>Venceu 9 corridas seguidas entre 1952 e 1953</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="piloto-card">
+        <img src="imagens/lauda.jpg">
+        <div class="piloto-info">
+          <h2>Niki Lauda</h2>
+          <span class="piloto-sub">Áustria · Ferrari de 1974 a 1977</span>
+
+          <h3>Na Fórmula 1</h3>
+          <p>
+            Estreou em 1971 e ficou conhecido pela inteligência técnica e pela
+            frieza ao volante. Também foi campeão pela McLaren, em 1984.
+          </p>
+
+          <h3>Na Ferrari</h3>
+          <p>
+            Transformou a Ferrari em favorita ao título. Em 1976, sofreu um grave acidente
+            em Nürburgring, voltou às pistas apenas seis semanas depois e perdeu o título
+            por um único ponto.
+          </p>
+
+          <h3>Conquistas</h3>
+          <ul>
+            <li>Tricampeão mundial (1975 e 1977 pela Ferrari, 1984 pela McLaren)</li>
+            <li>Títulos de construtores da Ferrari em 1975, 1976 e 1977</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="piloto-card">
+        <img src="imagens/schumacher.jpg">
+        <div class="piloto-info">
+          <h2>Michael Schumacher</h2>
+          <span class="piloto-sub">Alemanha · Ferrari de 1996 a 2006</span>
+
+          <h3>Na Fórmula 1</h3>
+          <p>
+            Foi bicampeão pela Benetton (1994 e 1995) antes de chegar à Ferrari. Tornou-se
+            um dos maiores nomes da história da categoria.
+          </p>
+
+          <h3>Na Ferrari</h3>
+          <p>
+            Chegou em 1996, quando a equipe passava por um longo jejum de títulos de pilotos.
+            Liderou a reconstrução do time e, entre 2000 e 2004, conquistou cinco títulos
+            seguidos, o maior período de domínio da história da Ferrari.
+          </p>
+
+          <h3>Conquistas</h3>
+          <ul>
+            <li>7 títulos mundiais (2 pela Benetton e 5 pela Ferrari)</li>
+            <li>91 vitórias na F1, sendo 72 pela Ferrari</li>
+            <li>Seis títulos de construtores seguidos com a Ferrari (1999 a 2004)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="piloto-card">
+        <img src="imagens/raikkonen.jpg">
+        <div class="piloto-info">
+          <h2>Kimi Räikkönen</h2>
+          <span class="piloto-sub">Finlândia · Ferrari em 2007–2009 e 2014–2018</span>
+
+          <h3>Na Fórmula 1</h3>
+          <p>
+            Estreou em 2001 pela Sauber e passou por McLaren, Lotus e Alfa Romeo. Ficou
+            conhecido como "Iceman" pelo jeito calmo e direto. Encerrou a carreira em 2021.
+          </p>
+
+          <h3>Na Ferrari</h3>
+          <p>
+            Chegou em 2007 para substituir Schumacher e, na primeira temporada, conquistou
+            o título por apenas um ponto de diferença. Voltou em 2014 onde ficou até o final de 2018
+          </p>
+
+          <h3>Conquistas</h3>
+          <ul>
+            <li>Campeão mundial em 2007, o último título de pilotos da Ferrari até hoje</li>
+            <li>21 vitórias na F1</li>
+            <li>Campeão de construtores com a Ferrari em 2007 e 2008</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="piloto-card">
+        <img src="imagens/aalonso.jpg">
+        <div class="piloto-info">
+          <h2>Fernando Alonso</h2>
+          <span class="piloto-sub">Espanha · Ferrari de 2010 a 2014</span>
+
+          <h3>Na Fórmula 1</h3>
+          <p>
+            Estreou em 2001 e foi bicampeão pela Renault (2005 e 2006). Em 2005, tornou-se o
+            mais jovem campeão da história até então. Segue em atividade na F1.
+          </p>
+
+          <h3>Na Ferrari</h3>
+          <p>
+            Levou a Ferrari à briga pelo título em quase todos os anos. Em 2010, 2012 e
+            2013 terminou como vice-campeão, e perdeu o título de 2010 na última corrida.
+          </p>
+
+          <h3>Conquistas</h3>
+          <ul>
+            <li>Bicampeão mundial (2005 e 2006)</li>
+            <li>32 vitórias na F1 sendo 11 pela Ferrari</li>
+            <li>Vice-campeão com a Ferrari em 2010, 2012 e 2013</li>
+          </ul>
+        </div>
+      </article>
+
+    </section>
+  </main>
+    <footer class="footer">
+    <p class="footer-copy">&copy; 2026 Miguel Oliveira. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
